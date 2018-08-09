@@ -1,28 +1,24 @@
 ## Deploy Django using Nginx, Celery, Redis and Postgresql
 A boilerplate to deploy Django with cool stuff. Also serves as an example project from these tutorial:
-1. <a href="http://ruddra.com/2016/08/14/docker-django-nginx-postgres/">Deploy Django, Gunicorn, NGINX, Postgresql using Docker</a>
-2. <a href="http://ruddra.com/2016/11/02/serve-static-files-by-nginx-from-django-using-docker/">Serve Static Files by Nginx from Django using Docker</a>
-3. <a href="http://ruddra.com/2016/11/14/docker-do-stuff-using-celery-using-redis-as-broker/">Docker: Use Celery in Django(Redis as Broker)</a>
 
-Where it is described how this boilerplate was created from scratch so that you can build your own.
+### What things include in this project?
+1. Python `3.6`
+2. Postgress `Latest`
+3. Nginx `Latest`
+4. Redis `Latest`
 
-### Basic Usage
-1. First run `make build` inside root directory.
-2. Then run `make up` to start up the project for first time.
+###### While doing docker up, it will automatically install other python dependencies from requirements.txt file
 
-Checkout the [commands](#commands) section for more usage.
+### How to start
+1. Make sure you have `docker` & `docker-compose` installed on your local
+2. Clone this repo on your machine
+3. First run `make build` inside root directory.
+4. Then run `make up` to start up the project for first time.
 
-### Preview
-A default Django project resides in `src` directory. So, when you start the project, you will see the following screen in `8000` port:
-
-![Demo One](https://github.com/ruddra/blog-images/raw/master/Demo%201.png)
-
-Also when you access the django container log via `make log-web`, you will see the following:
-
-![Demo Two](https://github.com/ruddra/blog-images/raw/master/Demo%202.png)
+Checkout the [commands](#commands) for more usage.
 
 ### Commands
-To use this project, run this commands:
+To use this project efficiently, below commands are available:
 
 1. `make up` to build the project and starting containers.
 2. `make build` to build the project.
